@@ -6,7 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["express", "middleware", "mongoose", "pagination", "filtering", "sorting"],
+  "keywords": [
+    "express",
+    "middleware",
+    "mongoose",
+    "pagination",
+    "filtering",
+    "sorting"
+  ],
   "author": "Arslan Ameer",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArslanAmeer/mongoose-paginated-advance-query-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArslanAmeer/mongoose-paginated-advance-query-middleware/issues"
+  },
+  "homepage": "https://github.com/ArslanAmeer/mongoose-paginated-advance-query-middleware#readme"
 }
