@@ -1,6 +1,6 @@
 const ErrorResponse = require('./utils/errorResponse');
 
-const advancedResults = (model, populate) => async (req, res, next) => {
+const advanceQueryResults = (model, populate) => async (req, res, next) => {
 	const reqQuery = { ...req.query };
 
 	if (nullCheck(reqQuery)) {
@@ -73,7 +73,7 @@ const advancedResults = (model, populate) => async (req, res, next) => {
 	next();
 };
 
-module.exports = advancedResults;
+module.exports = advanceQueryResults;
 
 function nullCheck(obj) {
 	for (let key in obj) {
