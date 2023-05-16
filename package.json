@@ -1,6 +1,6 @@
 {
   "name": "mongoose-paginated-advance-query-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware for advanced results with pagination, sorting and field selection",
   "main": "index.js",
   "scripts": {
