@@ -1,0 +1,12 @@
+{
+  "name": "mongoose-paginated-advance-query-middleware",
+  "version": "1.0.0",
+  "description": "Middleware for advanced results with pagination, sorting and field selection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["express", "middleware", "mongoose", "pagination", "filtering", "sorting"],
+  "author": "Arslan Ameer",
+  "license": "ISC"
+}
