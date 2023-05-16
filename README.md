@@ -1,3 +1,7 @@
+<p align="center" float="left">
+     <img src="./js-mongoose-express-middleware.png" alt="mongoose-paginated-advance-query-middleware" width="380">
+</p>
+
 # Mongoose Paginated Advanced Query Middleware
 
 This middleware for Express.js allows you to easily implement advanced querying, sorting, field selection, and pagination on your Mongoose models.
@@ -44,6 +48,19 @@ Here's an example of using the middleware with the `populate` parameter:
 app.get(
   '/api/data', 
   advanceQueryResults(Model, [{ path: 'field1', select: 'subfield1' }, { path: 'field2' }]), 
+  (req, res, next) => {
+    res.status(200).json(res.advanceQueryResults);
+  }
+);
+```
+
+Another example with complex or nested object `populate`:
+
+```javascript
+app.get(
+  '/api/data', 
+  advanceQueryResults(Model, [{ path: 'field1', select: 'subfield1', populate: { path: 'field1', select:'subfield1'} },
+  { path: 'field2' }]),
   (req, res, next) => {
     res.status(200).json(res.advanceQueryResults);
   }
@@ -127,4 +144,4 @@ This middleware was created by [Arslan Ameer](https://arslanameer.com).
 
 ## Contributing
 
-Contributions are always welcome! Please feel free to open an issue or create a pull request if you have any improvements or feature requests on the [GitHub repository](https://github.com/your-github-username/mongoose-paginated-advance-query-middleware).
+Contributions are always welcome! Please feel free to open an issue or create a pull request if you have any improvements or feature requests on the [GitHub repository](https://github.com/ArslanAmeer/mongoose-paginated-advance-query-middleware).
